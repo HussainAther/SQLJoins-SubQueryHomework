@@ -68,3 +68,9 @@ SELECT
 FROM payment p
 WHERE p.amount > 6.99;
 -- Answer: 1406
+
+-- -- How many free rentals did our stores give away?
+SELECT COUNT(*) AS free_rental_count
+FROM payment
+WHERE amount = 0;
+-- Answer: 24
